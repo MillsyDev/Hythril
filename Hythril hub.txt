@@ -1,0 +1,127 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Hythril", "Ocean")
+
+    -- MAIN
+    local Main = Window:NewTab("Universal")
+    local MainSection = Main:NewSection("Universal")
+
+    MainSection:NewToggle("Super-Human", "go fast and jump high", function(state)
+        if state then
+            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 120
+            game.Players.LocalPlayer.Character.Humanoid.JumpPower = 120
+        else
+            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+            game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+        end
+    end)
+
+    MainSection:NewButton("Infinite Yield", "FE Admin Commands", function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+    end)
+
+    local GAME = Window:NewTab("Games")
+    local GAMESection = GAME:NewSection("Games")
+
+    GAMESection:NewButton("Mining Simulator 2", "Script For MS2", function()
+        loadstring(game:HttpGet'https://raw.githubusercontent.com/RunDTM/miningsim2/main/rewrite.lua')()
+    end)
+
+    GAMESection:NewButton("BloxFruit", "Kidachi's Script for BloxFruit", function()
+        loadstring(game:HttpGet('https://kidachi.xyz/Bloxfruit', true))()
+    end)
+
+    GAMESection:NewButton("Odyssey", "Kidachi's Script for Arcane Odyssey", function()
+        loadstring(game:HttpGet('https://kidachi.xyz/Odyssey', true))()
+    end)
+
+    GAMESection:NewButton("Murder Mystery 2", "Kidachi's Script for MM2", function()
+        loadstring(game:HttpGet('https://kidachi.xyz/Script', true))()
+    end)
+    
+    --LOCAL PLAYER
+    local Player = Window:NewTab("Player")
+    local PlayerSection = Player:NewSection("Player")
+
+    PlayerSection:NewSlider("Walkspeed", "SPEED!!", 500, 16, function(s)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+    end)
+
+    PlayerSection:NewSlider("Jumppower", "JUMP HIGH!!", 350, 50, function(s)
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+    end)
+
+    PlayerSection:NewButton("Reset WS/JP", "Resets to all defaults", function()
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+    end)
+
+
+    --Other
+    local Other = Window:NewTab("Other")
+    local OtherSection = Other:NewSection("Other")
+
+    OtherSection:NewButton("Chat Spoofer", "Lets you chat for other people", function()
+        loadstring(game:HttpGet(('https://pastebin.com/raw/djBfk8Li'),true))()
+    end)
+
+    OtherSection:NewButton("Bypassed Fly", "bird mode", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Nicuse/RobloxScripts/main/BypassedFly.lua"))() 
+
+        Fly(true)
+    end)
+--WEAPON FIGHTING GAME SCRIPT
+if game.PlaceId == 8554378337 then
+    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+    local Window = Library.CreateLib("weapon hub", "Ocean")
+
+    -- MAIN
+    local Main = Window:NewTab("Universal")
+    local MainSection = Main:NewSection("Universal")
+
+    MainSection:NewToggle("Super-Human", "go fast and jump high", function(state)
+        if state then
+            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 120
+            game.Players.LocalPlayer.Character.Humanoid.JumpPower = 120
+        else
+            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+            game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+        end
+    end)
+
+    MainSection:NewButton("Infinite Yield", "FE Admin Commands", function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+    end)
+
+
+    --LOCAL PLAYER
+    local Player = Window:NewTab("Player")
+    local PlayerSection = Player:NewSection("Player")
+
+    PlayerSection:NewSlider("Walkspeed", "SPEED!!", 500, 16, function(s)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+    end)
+
+    PlayerSection:NewSlider("Jumppower", "JUMP HIGH!!", 350, 50, function(s)
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+    end)
+
+    PlayerSection:NewButton("Reset WS/JP", "Resets to all defaults", function()
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+    end)
+
+
+    --Other
+    local Other = Window:NewTab("Other")
+    local OtherSection = Other:NewSection("Other")
+
+    OtherSection:NewButton("Chat Spoofer", "Lets you chat for other people", function()
+        loadstring(game:HttpGet(('https://pastebin.com/raw/djBfk8Li'),true))()
+    end)
+
+    OtherSection:NewButton("Bypassed Fly", "bird mode", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Nicuse/RobloxScripts/main/BypassedFly.lua"))() 
+
+        Fly(true)
+    end)
+end
